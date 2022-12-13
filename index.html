@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button PopUp Modal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+</body>
+</html>
+<html>
+  
+<body>
+
+<!-- <p>Click on the button to copy the text from the text field. Try to paste the text (e.g. ctrl+v) afterwards in a different window, to see the effect.</p>
+
+<input type="text" value="Hello World" id="url">
+<button onclick="copyClicked()">Copy text</button> -->
+
+<p id="changeText">Click to copy current page url.</p>
+
+<p><input id="url" type="text" value="https://loopnet.acquia.dshrp.com/solutions/node/281" /><button class="coh-style-red-button clipboard" onclick="copyClicked()">Copy URL</button></p>
+
+
+<script>
+function copyClicked() {
+  // Get the text field
+  var copyURL = document.getElementById("url");
+
+
+  // Select the text field
+  copyURL.select();
+  copyURL.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyURL.value)
+
+  document.getElementById("changeText").innerHTML =  "URL copied!"
+  // Alert the copied text
+//   alert("URL is copied: " + copyURL.value);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+*{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+#url{
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 5%), 0px 5px 50px rgb(0 0 0 / 4%);
+    border-radius: 6px;
+    padding: 0.5rem;
+    min-width: 185px;}
+
+
+.clipboard {
+    border-radius: 6px;
+    FONT-WEIGHT: 100;
+    padding-top: 0.7rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.4rem;
+    padding-left: 1.5rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
